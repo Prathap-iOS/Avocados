@@ -16,7 +16,6 @@ struct ContentView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 20) {
-                VStack(alignment: .center, spacing: 20) {
                     // MARK: - HEADER
                     
                     ScrollView(.horizontal, showsIndicators: false) {
@@ -66,6 +65,7 @@ struct ContentView: View {
                     .padding(.horizontal)
                     
                     // MARK: - FOOTER
+                VStack(alignment: .center, spacing: 20) {
                     Text("All about avocados")
                         .fontWeight(.bold)
                         .modifier(TitleModifier())
